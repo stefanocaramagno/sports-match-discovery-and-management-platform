@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; 
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+}
+
+header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+}
+
+.hero-container {
+    position: relative;
+}
+
+.hero-container img {
+    height: 400px; 
+    object-fit: cover; 
+    margin-top: -50px; 
+}
+
+.hero-container .overlay {
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.card-body .text-dark {
+    color: #000 !important; 
+}
+
+.filters .btn {
+    border-radius: 8px;
+    font-weight: 500; 
+    padding: 8px 16px; 
+}
+
+.filters .btn.active {
+    background-color: #6c63ff; 
+    border-color: #6c63ff; 
+    color: #fff; 
+}
+
+.filters .btn-outline-primary {
+    color: #6c63ff; 
+    border-color: #6c63ff; 
+}
+
+.filters .btn-outline-primary:hover {
+    background-color: #f0f0ff; 
+    color: #6c63ff; 
+}
+
+.pagination .page-link {
+    color: #6c63ff; 
+    border-radius: 8px; 
+}
+
+.pagination .page-link:hover {
+    background-color: #f0f0ff; 
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #6c63ff; 
+    border-color: #6c63ff;
+    color: white;
+}
+
+.pagination .page-item {
+    margin: 0 -2px; 
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<!-- HEAD -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Impostazione del Titolo della Pagina -->
+    <title>Match | MeetYourMatch</title>
+
+    <!-- Impostazione del Favicon della Pagina -->
+    <link rel="icon" href="asset/favicon.ico" type="image/x-icon">
+
+    <!-- Inclusione del framework CSS Bootstrap da un CDN (Content Delivery Network) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Inclusione di file CSS -->
+    <link rel="stylesheet" href="css/home.css">
+
+    <!-- Inclusione di file JavaScript -->
+    <script src="js/home.js" defer></script>
+</head>
+
+<!-- BODY -->
+<body>
+    <!-- Header -->
+    <header class="fixed-top bg-white border-bottom">
+        <div class="container py-2">
+            <a href="home.html" class="text-decoration-none">
+                <h1 class="mb-0 fs-5 text-dark fw-bold">Meet your match</h1>
+            </a>
+        </div>
+    </header>
+
+    <div class="hero-container position-relative">
+        <img src="asset/banner_campo.png" alt="March cover" class="img-fluid w-100">
+        <div class="overlay position-absolute top-50 start-50 translate-middle text-center text-light">
+            <h2>Crea la tua partita <br> e trova giocatori</h2>
+            <a href="crea_match.html" class="btn btn-primary mt-3">Crea un match</a>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <main class="container pt-5" style="max-width: 1000px;">
+        <section class="filters mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-8 d-flex gap-3">
+                    <div>
+                        <label for="data-filter" class="form-label">Data</label>
+                        <select id="data-filter" class="form-select">
+                            <option>Oggi</option>
+                            <option>Domani</option>
+                            <option>Successive</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="sport-filter" class="form-label">Sport</label>
+                        <select id="sport-filter" class="form-select">
+                            <option>Tutti gli sport</option>
+                            <option>Tennis</option>
+                            <option>Calcio</option>
+                            <option>Basket</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="difficulty-filter" class="form-label">Difficoltà</label>
+                        <select id="difficulty-filter" class="form-select">
+                            <option>Tutte le difficoltà</option>
+                            <option>Semplice</option>
+                            <option>Medio</option>
+                            <option>Pro</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex justify-content-end gap-2 mt-md-0 mt-3">
+                    <button class="btn btn-primary active">Tutte</button>
+                    <button class="btn btn-outline-primary">Mattina</button>
+                    <button class="btn btn-outline-primary">Pomeriggio</button>
+                    <button class="btn btn-outline-primary">Sera</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="matches">
+            <div class="row">
+                <!-- contenuto caricato dinamicamente -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="fixed-bottom bg-white border-top">
+        <div class="container py-2">
+            <p class="text-center mb-0 text-dark">iMatchfinder 2024©</p>
+        </div>
+    </footer>
+</body>
+</html>

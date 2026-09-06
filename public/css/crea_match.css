@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; 
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+}
+
+header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb a, .breadcrumb .active {
+    color: #6f42c1; 
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.btn-purple {
+    background-color: #6f42c1;
+    color: white;
+    border: none;
+}
+
+.btn-purple:hover {
+    background-color: #5a359c;
+}
+
+.btn-secondary, .btn-purple {
+    font-weight: normal; 
+    padding: 12px 24px;
+}
+
+form label {
+    font-weight: normal; 
+}
+
+main {
+    max-width: 600px; 
+    margin: 0 auto; 
+}

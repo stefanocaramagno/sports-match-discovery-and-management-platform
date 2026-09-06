@@ -1,0 +1,2 @@
+CREATE DATABASE meetyourmatch_database;
+USE meetyourmatch_database;

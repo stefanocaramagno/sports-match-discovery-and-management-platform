@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<!-- HEAD -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Impostazione del Titolo della Pagina -->
+    <title>Match | MeetYourMatch</title>
+
+    <!-- Impostazione del Favicon della Pagina -->
+    <link rel="icon" href="asset/favicon.ico" type="image/x-icon">
+
+    <!-- Inclusione del framework CSS Bootstrap da un CDN (Content Delivery Network) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Inclusione di file CSS -->
+    <link rel="stylesheet" href="css/crea_match.css">
+
+    <!-- Inclusione di file JavaScript -->
+    <script src="js/crea_match.js" defer></script>
+</head>
+
+<!-- BODY -->
+<body>
+    <!-- Header -->
+    <header class="fixed-top bg-white border-bottom">
+        <div class="container py-2">
+            <a href="home.html" class="text-decoration-none">
+                <h1 class="mb-0 fs-5 text-dark fw-bold">Meet your match</h1>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="container pt-5 mt-5" style="max-width: 700px;">
+        <nav class="mb-4 text-center">
+            <ol class="breadcrumb justify-content-center">
+                <li class="breadcrumb-item"><a href="home.html" class="text-purple">Home</a></li>
+                <li class="breadcrumb-item active text-purple" aria-current="page">Crea nuovo match</li>
+            </ol>
+        </nav>
+
+        <h2 class="mb-4 fw-bold text-center">Crea un nuovo match</h2>
+        <form>
+            <div class="mb-3">
+                <label for="sport" class="form-label">Sport</label>
+                <select id="sport" class="form-select" required>
+                    <option value="">Seleziona uno sport...</option>
+                    <option value="Calcio">Calcio</option>
+                    <option value="Basket">Basket</option>
+                    <option value="Tennis">Tennis</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="title" class="form-label">Titolo del match</label>
+                <input type="text" id="title" class="form-control" placeholder="Scegli un titolo per l'evento es. Juve VS Milan">
+            </div>
+
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label for="date" class="form-label">Data</label>
+                    <input type="date" id="date" class="form-control">
+                </div>
+                <div class="col-md-6">
+                    <label for="time" class="form-label">Ora</label>
+                    <input type="time" id="time" class="form-control">
+                </div>
+            </div>
+
+            <div class="mb-3 mt-3">
+                <label for="address" class="form-label">Indirizzo</label>
+                <input type="text" id="address" class="form-control" placeholder="Inserisci indirizzo">
+            </div>
+
+            <div class="mb-3">
+                <label for="difficulty" class="form-label">Difficoltà</label>
+                <select id="difficulty" class="form-select">
+                    <option selected>Seleziona livello di difficoltà</option>
+                    <option>Semplice</option>
+                    <option>Medio</option>
+                    <option>Pro</option>
+                </select>
+            </div>
+
+            <div class="d-flex justify-content-end gap-2">
+                <button type="button" class="btn btn-secondary py-2 px-4">Annulla</button>
+                <button type="submit" class="btn btn-purple py-2 px-4">Crea match</button>
+            </div>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="fixed-bottom bg-white border-top">
+        <div class="container py-2">
+            <p class="text-center mb-0 text-dark">iMatchfinder 2024©</p>
+        </div>
+    </footer>
+</body>
+</html>
